@@ -27,7 +27,8 @@
 		"dev": "tsdown --watch",
 		"test": "vitest run",
 		"typecheck": "tsc --noEmit",
-		"prepublishOnly": "pnpm run build"
+		"prepublishOnly": "pnpm run build",
+		"release": "bumpp && pnpm publish"
 	},
 	"peerDependencies": {
 		"eslint": ">=9.0.0"
