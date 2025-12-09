@@ -281,8 +281,3 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 ## License
 
 MIT
-
-## Related Projects
-
--   [eslint-plugin-better-tailwindcss](https://github.com/francoismassart/eslint-plugin-better-tailwindcss) - Comprehensive Tailwind CSS linting
--   [tailwindcss](https://tailwindcss.com) - Utility-first CSS framework
