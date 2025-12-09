@@ -208,25 +208,9 @@ npx eslint . --fix
 3. **Mixed Base and Modifiers**: Separates base classes from modifier classes
 4. **Complex JSX Attributes**: Wraps complex class strings with the preferred function
 
-## Tailwind CSS Integration
+### Sorting Behavior
 
-When Tailwind CSS is installed and configured, the plugin uses Tailwind's official class ordering API to sort classes. This ensures:
-
--   **Accuracy**: Always matches Tailwind's official order
--   **Maintainability**: Automatically adapts to Tailwind updates
--   **Consistency**: Works with custom Tailwind configurations
-
-### How It Works
-
-1. The plugin detects if Tailwind CSS is installed
-2. If available, it loads your Tailwind configuration
-3. Uses Tailwind's `getClassOrder()` to get official sort order
-4. Extracts variant information using Tailwind's parsing API
-5. Sorts classes according to Tailwind's deterministic order
-
-### Fallback Behavior
-
-If Tailwind CSS is not available, the plugin uses a priority-based fallback system:
+The plugin uses a priority-based system:
 
 1. **Base classes** (no modifier) → Priority 0
 2. **Pseudo-class variants** (`hover:`, `focus:`, etc.) → Priority 1
