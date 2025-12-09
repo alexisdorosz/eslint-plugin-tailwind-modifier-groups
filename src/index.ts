@@ -1,7 +1,7 @@
 import { readFileSync } from "fs";
 import type { ESLint } from "eslint";
 
-import { noHello } from "./rules/no-hello.js";
+import { groupTailwindModifiers } from "./rules/group-tailwind-modifiers.js";
 
 const pkg = JSON.parse(
 	readFileSync(new URL("../package.json", import.meta.url), "utf-8")
@@ -14,7 +14,7 @@ const plugin: ESLint.Plugin = {
 		namespace: "tailwind-modifier-groups",
 	},
 	rules: {
-		"no-hello": noHello,
+		"group-tailwind-modifiers": groupTailwindModifiers,
 	},
 };
 

@@ -3,15 +3,14 @@
 	"type": "module",
 	"version": "0.0.0",
 	"description": "ESLint plugin to group Tailwind CSS classes by modifiers",
-	"author": "Author Name <author.name@mail.com>",
 	"license": "MIT",
-	"homepage": "https://github.com/author/library#readme",
+	"homepage": "https://github.com/alexisdorosz/eslint-plugin-tailwind-modifier-groups#readme",
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/author/library.git"
+		"url": "git+https://github.com/alexisdorosz/eslint-plugin-tailwind-modifier-groups.git"
 	},
 	"bugs": {
-		"url": "https://github.com/author/library/issues"
+		"url": "https://github.com/alexisdorosz/eslint-plugin-tailwind-modifier-groups/issues"
 	},
 	"exports": {
 		".": "./dist/index.mjs",
@@ -26,7 +25,7 @@
 	"scripts": {
 		"build": "tsdown",
 		"dev": "tsdown --watch",
-		"test": "vitest",
+		"test": "vitest run",
 		"typecheck": "tsc --noEmit",
 		"prepublishOnly": "pnpm run build"
 	},
@@ -37,7 +36,10 @@
 		"@types/eslint": "^9.6.1",
 		"@types/node": "^24.10.1",
 		"bumpp": "^10.3.2",
+		"class-variance-authority": "^0.7.1",
+		"clsx": "^2.1.1",
 		"eslint": "^9.39.1",
+		"tailwind-variants": "^3.2.2",
 		"tsdown": "^0.17.0",
 		"typescript": "^5.9.3",
 		"vitest": "^4.0.15"
