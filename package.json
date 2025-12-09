@@ -1,7 +1,7 @@
 {
 	"name": "eslint-plugin-tailwind-modifier-groups",
 	"type": "module",
-	"version": "0.0.0",
+	"version": "0.0.1",
 	"description": "ESLint plugin to group Tailwind CSS classes by modifiers",
 	"license": "MIT",
 	"homepage": "https://github.com/alexisdorosz/eslint-plugin-tailwind-modifier-groups#readme",
